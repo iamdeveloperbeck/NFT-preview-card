@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.cart-body {
+    width: 380px;
+    height: auto;
+    padding: 24px;
+    background: hsl(216, 50%, 16%);
+    border-radius: 16px;
+}
+
+.img-wrap {
+    position: relative;
+    cursor: pointer;
+}
+
+.img-wrap:hover .img-overlay-wrap {
+    visibility: visible;
+}
+
+.image {
+    position: relative;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.img-overlay-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    opacity: 0.6;
+    margin-bottom: 50px;
+}
+
+.img-overlay-wrap img{
+    z-index: 1;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content h3 {
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.content h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.desc {
+    font-size: 20px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 30px;
+}
+
+.count {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.price img {
+    margin-right: 6px;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.day img {
+    margin-right: 7px;
+}
+
+.avatar {
+    display: flex;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.avatar-name {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+.avatar-name span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.avatar-name span:hover {
+    color: hsl(178, 100%, 50%);
+}
